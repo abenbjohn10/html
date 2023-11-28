@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>J-Query</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div style="display:block;">
+<h1 id="myText">Helo There it's me. </h1>
+<button id="fadeinb">Fade in</button>
+<button id="fadeoutb">Fade out</button>
+<button id="slideinb">Slide up</button>
+<button id="slideoutb">Slide Down</button>
+
+<script>
+$(document).ready(function(){
+$("#fadeinb").click(function(){
+$("#myText").fadeIn();
+});
+$("#fadeoutb").click(function(){
+$("#myText").fadeOut();
+});
+$("#slideinb").click(function(){
+$("#myText").slideUp();
+});
+$("#slideoutb").click(function(){
+$("#myText").slideDown();
+});
+});
+</script>
+</div>
+</body>
+</html>

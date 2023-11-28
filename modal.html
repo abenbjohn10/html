@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School Details</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body background="background.jpg">
+<div class="container">
+<h3>Contact Us</h3>
+<form>
+<div class="form-group">
+<label>Name:</label>
+<input type="text" class="form-control" placeholder="Enter name" required>
+</div>
+<div class="form-group">
+<label>Email:</label>
+<input type="text" class="form-control" placeholder="Enter name" required>
+</div>
+<br><br>
+<div class="form-group">
+    <label>Message:</label>
+    <textarea class="form-control" placeholder="Enter your message"></textarea> 
+</div>
+<br><br>
+<div class="FORM-CHECK">
+    <input type="checkbox" class="FORM-CHECK-INPUT">
+    <label>Subscribe to our Newsletter (Optional)</label>
+</div>
+<br><br>
+<div class="FORM-CHECK">
+	<label>Gender</label><br><br>
+    <input type="radio" class="FORM-CHECK-INPUT" name="boy">
+    <label>Male</label>
+</div>
+<div class="FORM-CHECK">
+    <input type="radio" class="FORM-CHECK-INPUT" name="boy">
+    <label>Female</label>
+</div>
+<div class="FORM-CHECK">
+    <input type="radio" class="FORM-CHECK-INPUT" name="boy">
+    <label>Others</label>
+</div>
+<br><br>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure to save this changes</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        You can save the details
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  My modal
+</button>
+<button class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
